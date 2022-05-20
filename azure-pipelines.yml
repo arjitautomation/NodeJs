@@ -15,6 +15,8 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: |
-    npm audix fix
-  displayName: 'npm audit'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'npm audix fix'
+
