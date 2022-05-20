@@ -17,4 +17,4 @@ steps:
 
 - script: |
     npm audix fix
-  displayName: 'npm audit fix'
+  displayName: 'npm audit'
